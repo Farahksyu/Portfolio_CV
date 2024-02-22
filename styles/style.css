@@ -7,7 +7,7 @@
     --borderColor: #f1f1f1;
     --lineColor: #d9d9d9;
 
-    --primaryBackgroundCOlor: #fff;
+    --primaryBackgroundColor: #fff;
     --secondaryBackgroundColor: #fbfbfb;
     --thirdBackgroundColor: #f5f3fe;
 
@@ -71,6 +71,11 @@ a{
 }
 
 /* Titles */
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
 .pre-title {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
@@ -91,6 +96,12 @@ a{
     display: block;
     left: 0;
     top: 50%;
+}
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
 }
 
 /* Logo and Nav Menu */
@@ -168,5 +179,102 @@ nav ul li a {
 }
 
 .hero-right img {
-    width: 90%;
+    width: 70%;
+}
+
+/* Experiences Section */
+#experiences {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+}
+
+.experiences .pre-title {
+    margin: 0 auto;
+}
+
+.experiences-title {
+    text-align: center;
+}
+
+.experience {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.experiences h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.experience-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.experience-icon svg {
+    fill: var(--primaryIconColor);
+}
+
+/* Projects Section */
+#projects {
+    padding: var(--sectionPadding);
+}
+
+.project {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+}
+
+.project-cover {
+    height: 250px;
+}
+
+.project-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 2rem 1.5rem;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.project-title a svg:hover {
+    fill: var(--primaryIconColor);
+}
+
+.project-title a svg {
+    transition: 0.2s ease-in-out;
+}
+
+.project-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.project-tags div {
+    font-size: 0.9rem;
+    border: 1px solid var(--borderColor);
+    padding: 0.4rem 1rem;
+    color: var(--secondaryTextColor);
 }
