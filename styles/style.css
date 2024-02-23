@@ -377,3 +377,32 @@ footer {
 .footer-icons a:hover svg {
     fill: #000;
 }
+
+/* Scroll Button */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  button#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button#back-to-top-btn:hover {
+    background-color: #0056b3;
+  }
+  
