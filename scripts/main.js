@@ -18,7 +18,7 @@ window.onbeforeunload = () => {
     }
 };
 
-// Scroll Button
+// Back to top Button
 // Function to scroll to the top of the page
 function backToTop() {
     window.scrollTo({

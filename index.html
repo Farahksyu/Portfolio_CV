@@ -10,25 +10,22 @@
 <body>
 
     <!-- Header Section -->
-
     <header>
         <div class="main-container">
             <div class="nav">
                 <div class="logo">
-                    <a href="/">FKSYU</a>
+                        <a href="resume.pdf" target="_blank">
+                            <button class="btn">Resume</button>
+                        </a>
                 </div>
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#experiences">Experiences</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contacts">Contacts</a></li>
-                        <li>
-                            <a href="resume.pdf" target="_blank">
-                                <button class="btn">Resume</button>
-                            </a>
-                        </li>
                     </ul>
                 </nav>
                 <div class="burger">
@@ -39,15 +36,17 @@
             </div>
             <section id="hero">
                 <div class="hero-left">
-                    <h3 class="pre-title">My name is</h3>
+                    <h3 class="pre-title">Hai! My name is</h3>
                     <h1 class="hero-name">Farah Khairunnisa <span>Saribhayu</span></h1>
-                    <p>
-                        A Fresh Graduate from National Development University “Veteran” Yogyakarta. Experienced as a Software Engineer
-                        who works with HTML, CSS, JavaScript and Node.js. Regarding switch career it's about fascination with intriguing
-                        technical challenges and belief in the limitless growth opportunities offered by the technology industry. Currently
-                        enrolled in a Full-Stack Web Developer bootcamp to enhance skills and stay abreast of industry advancements. A
-                        detail-oriented individual who is eager for a full-time opportunity in Full-Stack Web Development.
-                    </p>
+                    <div class="wrapper">
+                        <div class="text">I'm a</div>
+                        <ul class="dynamic-text">
+                            <li><span>Fast Learner!</span></li>
+                            <li><span>Problem Solver!</span></li>
+                            <li><span>Creative Person!</span></li>
+                            <li><span>Front-End Developer!</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="hero-right">
                     <img src="./images/hero.jpeg" alt="Person">
@@ -56,6 +55,75 @@
         </div> 
     </header>
     <!-- End of Header Section -->
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about main-container">
+            <h1 class="section-title about-title">About Me</h1>
+            <p class="describe">
+                A Fresh Graduate from National Development University “Veteran” Yogyakarta. Experienced as a Software Engineer
+                who works with HTML, CSS and JavaScript. Regarding switch career it's about fascination with intriguing
+                technical challenges and belief in the limitless growth opportunities offered by the technology industry. Currently
+                enrolled in a Full-Stack Web Developer bootcamp to enhance skills and stay abreast of industry advancements. A
+                detail-oriented individual who is eager for a full-time opportunity in Full-Stack Web Development.
+            </p>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills main-container">
+            <h3 class="pre-title">Skills</h3>
+            <h1 class="section-title skills-title">My Skills</h1>
+
+            <div class="row">
+                <div class="item">
+                    <div class="item-text">
+                        <span>HTML5</span>
+                        <span class="w-80">80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-text">
+                        <span>Vanilla CSS</span>
+                        <span class="w-75">75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-text">
+                        <span>Tailwind CSS</span>
+                        <span class="w-70">70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar3"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-text">
+                        <span>JavaScript</span>
+                        <span class="w-50">50%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Skills Section -->
+
 
     <!-- Experiences Section -->
     <section id="experiences">
@@ -70,106 +138,59 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.896 10l-4.896-8-4.896 8-7.104-4 3 11v5h18v-5l3-11-7.104 4zm-11.896 10v-2h14v2h-14zm14.2-4h-14.4l-1.612-5.909 4.615 2.598 4.197-6.857 4.197 6.857 4.615-2.598-1.612 5.909z"/></svg>
                     </div>
                     <h4>Software Engineer Internship at Fairtech Pte Ltd</h4>
-                    <p>September 2023 - December 2023</p>
+                    <h5>September 2023 - December 2023</h5>
+                    <p>Collaborated with senior developers to gain hands-on experience in building responsive and
+                    visually engaging web applications using HTML, CSS and JavaScript. Assisted in debugging and testing code, contributing to the optimization of website performance.</p>
                 </div>
                 <!-- Experience 2-->
-                <div class="experience">
-                    <div class="experience-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 20c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1zm0-2c-1.656 0-3 1.343-3 3s1.344 3 3 3 3-1.343 3-3-1.344-3-3-3zm9 2c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1zm0-2c-1.656 0-3 1.343-3 3s1.344 3 3 3 3-1.343 3-3-1.344-3-3-3zm0-16c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1zm0-2c-1.656 0-3 1.343-3 3s1.344 3 3 3 3-1.343 3-3-1.344-3-3-3zm9 20c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1zm0-2c-1.656 0-3 1.343-3 3s1.344 3 3 3 3-1.343 3-3-1.344-3-3-3zm-1.577-1.721l-6.423-5.028v-3.352c-.323.066-.658.101-1 .101s-.677-.035-1-.101v3.352l-6.424 5.028c.695.233 1.323.602 1.844 1.093l5.58-4.372 5.579 4.373c.522-.492 1.15-.861 1.844-1.094z"/></svg>
-                    </div>
-                    <h4>RevoU Mini Bootcamp</h4>
-                    <p>January 2024 - January 2024</p>
-                </div>
-                <!-- Experience 3-->
                 <div class="experience">
                     <div class="experience-icon">
                         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12m2.557 16h-5.115c.546 2.46 1.441 4.114 2.558 5.744 1.194-1.741 2.041-3.41 2.557-5.744m-7.157 0h-4.567c1.236 2.825 3.704 4.972 6.755 5.716-1.048-1.733-1.783-3.658-2.188-5.716m13.767 0h-4.567c-.391 1.988-1.095 3.887-2.175 5.694 3.012-.763 5.517-2.895 6.742-5.694m-14.005-6h-4.962c-.267 1.313-.267 2.685 0 4h4.915c-.119-1.329-.101-2.672.047-4m7.661 0h-5.647c-.165 1.326-.185 2.672-.053 4h5.753c.133-1.328.111-2.673-.053-4m6.977 0h-4.963c.148 1.328.166 2.671.048 4h4.915c.26-1.285.273-2.648 0-4m-12.156-7.729c-3.077.732-5.567 2.886-6.811 5.729h4.653c.435-2.042 1.178-3.985 2.158-5.729m2.355-.048c-1.089 1.77-1.91 3.453-2.463 5.777h4.927c-.534-2.246-1.337-3.948-2.464-5.777m2.368.069c1.013 1.812 1.733 3.76 2.146 5.708h4.654c-1.232-2.816-3.762-4.958-6.8-5.708"/></svg>
                     </div>
                     <h4>Harisenin Bootcamp</h4>
-                    <p>February 2024 - Present</p>
+                    <h5>February 2024 - Present</h5>
+                    <p>Developed a job portal using Tailwind CSS, React.js, Node.js, Express.js and MySQL as a final project. Collaborated with a team of three via GitHub. Created several personal projects.</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- End of Experiences Section -->
 
+
     <!-- Projects Section -->
     <section id="projects">
         <div class="projects main-container">
             <h3 class="pre-title">My Projects</h3>
-            <h1 class="section-title">Featured Projects</h1>
-
-            <div class="grid-3">
-                <!-- Project 1 -->
-                <div class="project">
+            <h1 class="section-title project-title">Featured Projects</h1>
+            <!-- Project 1 -->
+            <div class="project">
                     <div class="project-cover">
-                        <img src="./images/projects/project-1.jpeg" alt="Project 1">
-                    </div>
-
-                    <div class="project-info">
-                        <div class="project-title">
-                            <h4>Agency Website</h4>
-                            <a href="/" class="project-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg>
-                            </a>
-                        </div>
-                        <div class="project-tags">
-                            <div>React</div>
-                            <div>Tailwind</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet blanditiis magnam! Eveniet, velit aliquam.
-                        </p>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project">
-                    <div class="project-cover">
-                        <img src="./images/projects/project-2.jpeg" alt="Project 2">
+                        <img src="./images/projects/project-1.png" alt="Project 1">
                     </div>
 
                     <div class="project-info">
                         <div class="project-title">
                             <h4>Landing Page</h4>
-                            <a href="/" class="project-link">
+                            <a href="https://github.com/Farahksyu/grocery-shopping-website" class="project-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg>
                             </a>
                         </div>
-                        <div class="project-tags">
-                            <div>Vue</div>
-                            <div>Contentful</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet blanditiis magnam! Eveniet, velit aliquam.
+                        <p>Grocery Shopping Store Website
                         </p>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project">
-                    <div class="project-cover">
-                        <img src="./images/projects/project-3.jpeg" alt="Project 3">
-                    </div>
-
-                    <div class="project-info">
-                        <div class="project-title">
-                            <h4>Dashboard Admin</h4>
-                            <a href="/" class="project-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg>
-                            </a>
-                        </div>
                         <div class="project-tags">
-                            <div>React</div>
-                            <div>Materialize</div>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>JS</div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet blanditiis magnam! Eveniet, velit aliquam.
-                        </p>
                     </div>
-                </div>
             </div>
         </div>
     </section>
     <!-- End of Projects Section -->
 
+
     <!-- Contacts Section -->
-        <section id="contacts">
+    <section id="contacts">
             <div class="contact main-container">
                 <div class="contact-left">
                     <form class="contact-form" action="https://formspree.io/f/mrgnkgak" method="POST">
@@ -191,8 +212,10 @@
                     <!-- Contact Item 1 -->
                     <div class="contact-item">
                         <div class="contact-item-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-3.148 0-6 2.553-6 5.702 0 4.682 4.783 5.177 6 12.298 1.217-7.121 6-7.616 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 16l-6.707-2.427-5.293 2.427-5.581-2.427-6.419 2.427 4-9 3.96-1.584c.38.516.741 1.08 1.061 1.729l-3.523 1.41-1.725 3.88 2.672-1.01 1.506-2.687-.635 3.044 4.189 1.789.495-2.021.465 2.024 4.15-1.89-.618-3.033 1.572 2.896 2.732.989-1.739-3.978-3.581-1.415c.319-.65.681-1.215 1.062-1.731l4.021 1.588 3.936 9z"/>
-                            </svg>
+                            <a href="https://maps.app.goo.gl/J4askdYApJ6LE2t27">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-3.148 0-6 2.553-6 5.702 0 4.682 4.783 5.177 6 12.298 1.217-7.121 6-7.616 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 16l-6.707-2.427-5.293 2.427-5.581-2.427-6.419 2.427 4-9 3.96-1.584c.38.516.741 1.08 1.061 1.729l-3.523 1.41-1.725 3.88 2.672-1.01 1.506-2.687-.635 3.044 4.189 1.789.495-2.021.465 2.024 4.15-1.89-.618-3.033 1.572 2.896 2.732.989-1.739-3.978-3.581-1.415c.319-.65.681-1.215 1.062-1.731l4.021 1.588 3.936 9z"/>
+                                </svg>
+                            </a>
                         </div>
                         <div class="contact-item-detail">
                             <h4>Address</h4>
@@ -202,17 +225,21 @@
                     <!-- Contact Item 2 -->
                     <div class="contact-item">
                         <div class="contact-item-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/></svg>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/></svg>
+                            </a>
                         </div>
                         <div class="contact-item-detail">
                             <h4>Phone</h4>
-                            <p>0831-4524-****</p>
+                            <p>0831-4524-8526</p>
                         </div>
                     </div>
                     <!-- Contact Item 3 -->
                     <div class="contact-item">
                         <div class="contact-item-icon">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 23h-24v-13.275l2-1.455v-7.27h20v7.272l2 1.453v13.275zm-20-10.472v-9.528h16v9.527l-8 5.473-8-5.472zm14-.528h-12v-1h12v1zm0-3v1h-12v-1h12zm-7-1h-5v-3h5v3zm7 0h-6v-1h6v1zm0-2h-6v-1h6v1z"/></svg>
+                            <a href="#">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 23h-24v-13.275l2-1.455v-7.27h20v7.272l2 1.453v13.275zm-20-10.472v-9.528h16v9.527l-8 5.473-8-5.472zm14-.528h-12v-1h12v1zm0-3v1h-12v-1h12zm-7-1h-5v-3h5v3zm7 0h-6v-1h6v1zm0-2h-6v-1h6v1z"/></svg>
+                            </a>
                         </div>
                         <div class="contact-item-detail">
                             <h4>Email</h4>
@@ -221,27 +248,32 @@
                     </div>
                 </div>
             </div>
-        </section>
+            </div>
+    </section>
     <!-- End of Contacts Section -->
+
+
+    <!-- Footer Section -->
     <footer>
         <div class="footer-icons">
-            <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/farah-khairunnisa-saribhayu/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
-            <a href="">
+            <a href="https://github.com/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             </a>
         </div>
         <p>&#169; 2024 - Made by Farah Khairunnisa Saribhayu</p>
     </footer>
-    <!-- Footer Section -->
-
     <!-- End of Footer Section -->
+
+
     <!-- Scroll Button -->
-    <button onclick="backToTop()" id="back-to-top-btn">Back to Top</button>
+    <button onclick="backToTop()" id="back-to-top-btn">
+        <span class="top">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.014 11.998c0 5.517 4.48 9.997 9.998 9.997s9.997-4.48 9.997-9.997c0-5.518-4.479-9.998-9.997-9.998s-9.998 4.48-9.998 9.998zm6.211-1.524s1.505-1.501 3.259-3.254c.146-.147.338-.22.53-.22s.384.073.53.22c1.754 1.752 3.258 3.254 3.258 3.254.145.145.217.335.217.526 0 .192-.074.384-.221.53-.292.293-.766.295-1.057.004l-1.977-1.977v6.693c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-6.693l-1.979 1.978c-.289.289-.761.287-1.054-.006-.147-.147-.221-.339-.222-.53 0-.191.071-.38.216-.525z" fill-rule="nonzero"/></svg>
+        </span>
+    </button>
     <script src="scripts/main.js"></script>
 </body>
 </html>

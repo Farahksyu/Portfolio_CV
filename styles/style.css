@@ -8,11 +8,11 @@
     --lineColor: #d9d9d9;
 
     --primaryBackgroundColor: #fff;
-    --secondaryBackgroundColor: #fbfbfb;
-    --thirdBackgroundColor: #f5f3fe;
+    --secondaryBackgroundColor: #EEEDEB;
+    --thirdBackgroundColor: #E0CCBE;
 
-    --primaryIconColor: #7e74f1;
-    --primaryIconColorHover: #5d51e8;
+    --primaryIconColor: #747264;
+    --primaryIconColorHover: #3C3633;
 
     --sectionPadding: 6rem 0;
 
@@ -60,19 +60,23 @@ a{
 /* Buttons */
 .btn {
     padding: 1rem 1.5rem; 
-    background: white;
+    background: var(--primaryTextColor);
     border: 1.5px solid var(--borderColor);
+    border-radius: 50%;
     cursor: pointer;
     transition: .2s ease-in-out;
+    font-size: 16px;
+    color: var(--primaryBackgroundColor);
 }
 
 .btn:hover {
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    box-shadow: var(--primaryIconColorHover);
+    border-radius: 0%;
 }
 
 /* Titles */
 .section-title {
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 2rem;
     font-size: 2rem;
 }
 
@@ -125,7 +129,7 @@ a{
 }
 
 .logo a {
-    color: var(--primaryTextColor);
+    color: var(--primaryIconColor);
 }
 
 nav ul li {
@@ -134,7 +138,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--primaryTextColor);
+    color: var(--secondaryTextColor);
+}
+
+nav ul li a:hover {
+    color: var(--primaryIconColorHover);
 }
 
 /* Burger */
@@ -164,7 +172,7 @@ nav ul li a {
 }
 
 .hero-name {
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin: 0.5rem 0 1rem;
 }
@@ -180,6 +188,167 @@ nav ul li a {
 
 .hero-right img {
     width: 70%;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .text {
+    color: var(--primaryTextColor);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.wrapper .dynamic-text {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-text li{
+    list-style: none;
+    color: var(--primaryIconColorHover);
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-text li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-text li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 78px;
+    width: 100%;
+    background: var(--primaryBackgroundColor);
+    border-left: 2px solid --primaryIconColor;
+    animation: typing 3s steps(14) infinite;
+}
+
+.about-title, .describe{
+    text-align: center;
+    padding: 0 0.5rem 1rem 0.5rem;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+/* Skills Section */
+#skills {
+    background-color: var(--secondaryBackgroundColor);
+}
+
+.skills .pre-title {
+    margin: 0 auto;
+}
+
+.skills-title {
+    text-align: center;
+}
+
+.skills {
+    padding: 4rem 0 2.5rem 0;
+}
+
+.skills .row {
+    margin: 1rem 0;
+}
+
+.skills .item {
+    padding: 1rem 0;
+    margin: 0.3rem 0;
+}
+
+.skills .item-text {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.skills .item-text span {
+    position: absolute;
+}
+
+.skills .item-text .w-80{
+    margin-left: 75%;
+}
+
+.skills .item-text .w-75{
+    margin-left: 70%;
+}
+
+.skills .item-text .w-70{
+    margin-left: 65%;
+}
+
+.skills .item-text .w-50{
+    margin-left: 45%;
+}
+
+.progress {
+    margin: 2rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--primaryBackgroundColor);
+    overflow: hidden;
+}
+
+.progress-bar1 {
+    background: var(--primaryTextColor);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 80%;
+}
+
+.progress-bar2 {
+    background: var(--primaryTextColor);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 75%;
+}
+
+.progress-bar3 {
+    background: var(--primaryTextColor);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 70%;
+}
+
+.progress-bar4 {
+    background: var(--primaryTextColor);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 50%;
 }
 
 /* Experiences Section */
@@ -205,8 +374,13 @@ nav ul li a {
 
 .experiences h4 {
     margin: 1.5rem 0;
-    font-weight: 500;
-    font-size: 1.05rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.experiences p{
+    margin: 0.5rem;
+    text-align: justify;
 }
 
 .experience-icon {
@@ -221,6 +395,13 @@ nav ul li a {
     fill: var(--primaryIconColor);
 }
 
+.experience-info {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
 /* Projects Section */
 #projects {
     padding: var(--sectionPadding);
@@ -230,15 +411,15 @@ nav ul li a {
     border-radius: var(--itemBorderRadius);
     overflow: hidden;
     border: 1px solid var(--borderColor);
+    width: 30rem;
 }
 
 .project-cover {
-    height: 250px;
+    height: 20rem;
 }
 
 .project-cover img {
-    width: 100%;
-    height: 100%;
+    height: 20rem;
     object-fit: cover;
 }
 
@@ -389,20 +570,24 @@ body, html {
     padding: 20px;
   }
   
-  button#back-to-top-btn {
+button#back-to-top-btn {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background: none;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+  }
+
+  #back-to-top-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primaryIconColorHover);
+    transform: translateY(10%);
   }
   
   button#back-to-top-btn:hover {
-    background-color: #0056b3;
+    background: none;
   }
-  

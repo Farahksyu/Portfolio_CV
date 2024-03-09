@@ -2,10 +2,17 @@
     p {
         font-size: 0.9rem;
         line-height: 1.8rem;
+        padding: 0 0 3rem 0;
     }
 
     .grid-3 {
         gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper {
+        display: none;
     }
 }
 
@@ -87,13 +94,13 @@
     }
 
     .hero-left .pre-title {
-        margin: 0 auto;
+        margin: 15px auto;
     }
 
     .hero-name {
         font-size: 2.3rem;
         margin-bottom: 0.5rem;
-    }
+    } 
 
     /* Footer Section */
     footer {
@@ -110,4 +117,10 @@
 .pre-title {
     font-size: 0.7rem;
 }
+
+/* Project */
+.project {
+    width: 20rem;
 }
+}
+
